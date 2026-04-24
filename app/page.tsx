@@ -26,7 +26,7 @@ export default function Home() {
       <About/>
       <Legacy />
       <Testamonials />
-      <div className="w-full flex">
+      <div className="w-full flex flex-col lg:flex-row">
         <Volunteer />
         <Donations />
       </div>
