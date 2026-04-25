@@ -71,8 +71,8 @@ const Nav = () => {
                 </div>
 
                 <div className="justify-end px-4 items-center w-full uppercase hidden xl:flex gap-6">
-                    <Link href="#" className="text-lg hover:font-bold hover:text-xl transition-all duration-300 font-semibold text-yellow-300">Volunteer!</Link>
-                    <Link  href="#" className="group rounded hover:scale-105 hover:bg-red-600  bg-red-500 text-2xl p-4 px-7 font-semibold flex items-center gap-2 transition-all duration-300">DONATE <Heart className="size-7 group-hover:size-8 transition-all duration-300"/></Link>
+                    <Link href="#donate" className="text-lg hover:font-bold hover:text-xl transition-all duration-300 font-semibold text-yellow-300">Volunteer!</Link>
+                    <Link  href="#donate" className="group rounded hover:scale-105 hover:bg-red-600  bg-red-500 text-2xl p-4 px-7 font-semibold flex items-center gap-2 transition-all duration-300">DONATE <Heart className="size-7 group-hover:size-8 transition-all duration-300"/></Link>
                 </div>
             </div>
         </nav>

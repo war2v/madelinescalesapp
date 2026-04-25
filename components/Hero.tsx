@@ -10,8 +10,9 @@ const Hero = () => {
                 
                 <div className="flex xl:flex-col justify-center items-center">
                     <h1>Leading with my
-                    <h1 className="text-red-500 text-center -rotate-2 text-6xl xl:text-9xl hover:scale-105 transition-all duration-600 hover:animate-pulse  hover:cursor-pointer">heart</h1>
+                    
                     </h1>
+                    <span className="text-red-500 text-center -rotate-2 text-6xl xl:text-9xl hover:scale-105 transition-all duration-600 hover:animate-pulse  hover:cursor-pointer">heart</span>
                 </div>
                 <div className="flex justify-center items-center">
                     <h1>for all people.</h1>
