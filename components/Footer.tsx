@@ -1,13 +1,18 @@
-import { Link, Mail, MapPin, Phone } from "lucide-react";
+"use client";
+
+import { Mail, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
 import QRCode from "react-qr-code";
 
-export const Footer = () => {
-  const navLinks = [
-    { name: "About", href: "#about" },
-    { name: "Legacy", href: "#legacy" },
-    { name: "Impact", href: "#impact" },
-    { name: "Testimonials", href: "#testimonials" },
-  ];
+interface FooterProps {
+    date: Number;
+    navLinks: {
+        name: string;
+        href: string;
+    }[];
+}
+export const Footer = ({navLinks}: FooterProps) => {
+  
 
   return (
     <footer className="bg-[#0B0F19] w-full text-white pt-24 pb-12 border-t-8 border-[#FFB800]">
@@ -15,7 +20,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div>
             <Link
-              to="/"
+            href={"#"}
               className="flex flex-col items-start gap-0.5 mb-6 group"
             >
               <span className="font-black text-4xl leading-none uppercase tracking-tighter text-white">
@@ -26,7 +31,7 @@ export const Footer = () => {
               </span>
             </Link>
             <p className="text-slate-400 font-medium leading-relaxed mb-6 max-w-sm">
-              A legacy of 24 years of service. Daughter of history. Advocate for
+              A legacy of 16 years of service. Daughter of history. Advocate for
               all. Leading with heart and standing firm for Murfreesboro.
             </p>
           </div>
@@ -92,7 +97,7 @@ export const Footer = () => {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 font-medium uppercase tracking-wider">
           <p>Paid for by the Committee to Elect Scales.</p>
-          <p>&copy; {new Date().getFullYear()} All Rights Reserved.</p>
+          <p>&copy; {} All Rights Reserved.</p>
         </div>
       </div>
     </footer>

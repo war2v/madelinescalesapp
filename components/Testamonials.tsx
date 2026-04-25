@@ -14,7 +14,7 @@ export const Testamonials = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {[
                     { text: "When my neighborhood was facing unfair zoning changes, she was the only one who stood up and fought for us. She doesn't back down.", author: "Sarah M.", area: "Ward 3", src: "/images/thePeople.webp" },
-                    { text: "Seeing a Black woman lead with such confidence and grace for 24 years has inspired a whole new generation of young women in our city.", author: "Marcus T.", area: "Local Business Owner", src: "/images/thePeople2.webp" },
+                    { text: "Seeing a Black woman lead with such confidence and grace for 16 years has inspired a whole new generation of young women in our city.", author: "Marcus T.", area: "Local Business Owner", src: "/images/thePeople2.webp" },
                     { text: "It's rare to find a politician who actually answers their phone and shows up to community meetings even when it's not election season. She is the real deal.", author: "Elena R.", area: "Community Advocate", src:"/images/thePeople3.png" }
                     ].map((testimonial, i) => (
                     <div key={i} className="bg-white p-8 shadow-[8px_8px_0px_#0B0F19] border-2 border-[#0B0F19] transform hover:-translate-y-2 transition-transform">

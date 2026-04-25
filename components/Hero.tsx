@@ -37,7 +37,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-xl md:text-2xl text-slate-200 font-bold max-w-3xl mx-auto mb-12 drop-shadow-lg"
           >
-            24 Years of Unyielding Service. Standing Firm in Conflict. Always Fighting for You.
+            16 Years of Unyielding Service. Standing Firm in Conflict. Always Fighting for You.
           </motion.p>
 
           <motion.div
