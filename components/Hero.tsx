@@ -11,7 +11,7 @@ const Hero = () => {
   const opacity = useTransform(scrollY, [0, 600], [1, 0]);
 
   return (
-    <section id="hero" className=" relative h-screen w-full flex items-center justify-center overflow-hidden bg-black">
+    <section id="hero" className=" pt-4 relative h-screen w-full flex items-center justify-center overflow-hidden bg-black">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-[#0B0F19]/60 to-transparent z-10" />
           <div className="absolute inset-0 bg-black/40 mix-blend-multiply z-10" />
@@ -25,10 +25,10 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-8"
           >
-            <span className="inline-block py-2 px-6 bg-[#FFB800] text-[#0B0F19] font-black text-sm uppercase tracking-[0.3em] mb-6 shadow-xl transform -rotate-1">
+            <span className="inline-block xs:py-1 xs:hidden py-2 px-6 bg-[#FFB800] text-[#0B0F19] font-black text-sm uppercase tracking-[0.3em] mb-6 shadow-xl transform -rotate-1">
               Re-Elect Murfreesboro's Voice
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] max-w-5xl mx-auto drop-shadow-2xl">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl lg:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] max-w-5xl mx-auto drop-shadow-2xl">
               Leading With My <span className="flex text-[#E53935] justify-center items-center gap-2 transform">Heart </span> <br className="hidden md:block"/> For All People.
             </h1>
           </motion.div>
@@ -37,7 +37,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-xl md:text-2xl text-slate-200 font-bold max-w-3xl mx-auto mb-12 drop-shadow-lg"
+            className="sm:text-xl md:text-2xl text-slate-200 font-bold max-w-3xl mx-auto mb-12 drop-shadow-lg"
           >
             16 Years of Unyielding Service. Standing Firm in Conflict. Always Fighting for You.
           </motion.p>

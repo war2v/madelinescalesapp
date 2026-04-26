@@ -20,13 +20,7 @@ export const Volunteer = () => {
                 <input type="text" placeholder="Street" className="w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] transition-colors font-bold" />
                 </div>
 
-                <div className="flex flex-col w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] transition-colors font-bold">
-                    <div className="flex w-full justify-between items-center">
-                        <input type="checkbox" id="yardSign" className="bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] transition-colors font-bold" />
-                        <label>I would like a <span className="text-red-500 uppercase">yard sign</span></label> 
-                    </div> 
-                     
-                </div>
+                
 
                 <div>
                 <input type="tel" placeholder="Phone Number" className="w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] transition-colors font-bold" />
