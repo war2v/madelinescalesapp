@@ -23,8 +23,8 @@ const Nav = () => {
         <nav className={`fixed top-0 flex w-full px-10 py-3 text-white bg-slate-950 transition-colors duration-400 ease-out z-100 ${scrollPos ? `bg-black/80 backdrop-blur-md`  :  `bg-transparent backdrop-blur-0`}`}>
             <div className="flex w-full">
                 <div className="flex flex-col w-full ">
-                    <h1 className="text-3xl font-extrabold uppercase">
-                        Scales-Harris
+                    <h1 className="text-2xl font-extrabold uppercase">
+                        Scales <span className="hidden md:flex">Harris</span>
                     </h1>
                     <h3 className="font-semibold text-yellow-400 uppercase">
                         For City Council
@@ -32,35 +32,34 @@ const Nav = () => {
                 </div>
 
                 <div className="w-full flex justify-end xl:hidden">
+                    <div className="flex p-4">
+                        <Link  href="#donate" className="group rounded hover:scale-105 hover:bg-red-600  bg-red-500 text-lg p-2 px-4 font-semibold flex items-center gap-2 transition-all duration-300">DONATE <Heart className="size-6 group-hover:size-8 transition-all duration-300"/></Link>
+                    </div>
                     <DropdownMenu>
                         <DropdownMenuTrigger>
                             <Menu/>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="w-full flex flex-col text-white items-center font-bold bg-slate-950 ">
                             <DropdownMenuItem>
-                                <Link href="#">About</Link>
+                                <Link href="#about" className="text-lg">About</Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem>
-                                <Link href="#" className="">About</Link>
+                                <Link href="#legacy" className="text-lg">Legacy</Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem>
-                                <Link href="#">Legacy</Link>
+                                <Link href="#impact" className="text-lg">Impact</Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem>
-                                <Link href="#">Impact</Link>
+                                <Link href="#testimonials" className="text-lg">Testamonials</Link>
                             </DropdownMenuItem>
                             <DropdownMenuItem>
-                                <Link href="#">Testamonials</Link>
+                                <Link href="#" className="rounded-lg bg-yellow-500 text-lg p-2 font-extrabold text-white flex items-center gap-2">Volunteer!</Link>
                             </DropdownMenuItem>
-                            <DropdownMenuItem>
-                                <Link href="#" className="text-xl text-yellow-300">Volunteer!</Link>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem>  
-                                <Link  href="#" className=" rounded-xl bg-red-500 text-xl p-2 font-extrabold text-white flex items-center gap-2">DONATE <Heart/></Link>
-                            </DropdownMenuItem>
+                           
                         </DropdownMenuContent>
                         
                     </DropdownMenu>
+                    
                 </div>
 
                 <div className="justify-between font-semibold text-lg items-center w-full uppercase hidden xl:flex ">

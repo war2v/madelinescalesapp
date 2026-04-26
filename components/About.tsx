@@ -1,3 +1,8 @@
+"use client";
+
+import { DonateButton } from "./DonateButton"
+import { VolunteerButton } from "./VolunteerButton"
+
 export const About = () => {
     return(
              <section id="about" className="py-24 md:py-32 bg-[#0B0F19] border-y-8 border-[#FFB800]">
@@ -20,7 +25,7 @@ export const About = () => {
               
               <div className="space-y-6 text-lg text-slate-300 font-medium leading-relaxed">
                 <p>
-                  For over two decades, I have proudly served the people of Murfreesboro. Leadership isn't just a title—it is a calling. When faced with tough decisions, I have never backed down from conflict if it meant protecting our community.
+                  For over almost two decades, I have proudly served the people of Murfreesboro. Leadership isn't just a title—it is a calling. When faced with tough decisions, I have never backed down from conflict if it meant protecting our community.
                 </p>
                 <p>
                   As the <strong className="text-white">only woman on the city council for 10 years</strong>, I learned early on that representation matters. Our city makes the best decisions when every voice is heard, and I have made it my mission to ensure women always have a seat at the leadership table.
@@ -42,6 +47,10 @@ export const About = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex w-full p-10 md:justify-center gap-4 md:flex-row flex-col items-center">
+            <VolunteerButton/>
+            <DonateButton/>
         </div>
       </section>
     )

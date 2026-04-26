@@ -2,6 +2,8 @@
 
 import { HeartHandshake, Scale, ShieldCheck } from "lucide-react";
 import { motion } from "motion/react"
+import { VolunteerButton } from "./VolunteerButton";
+import { DonateButton } from "./DonateButton";
 
 export const HeartForThePeople = () => {
     return(
@@ -27,7 +29,7 @@ export const HeartForThePeople = () => {
               <div className="absolute inset-0 bg-[#E53935] transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-500 ease-out z-0" />
               <div className="relative z-10">
                 <HeartHandshake className="text-[#FFB800] w-16 h-16 mb-6 group-hover:text-white transition-colors" />
-                <h3 className="text-2xl text-white font-black uppercase tracking-tight mb-4 group-hover:text-white">Relentless Advocacy</h3>
+                <h3 className="text-2xl text-white font-black uppercase tracking-tight mb-4 group-hover:text-white">Relentless Advocacy for 16 years</h3>
                 <p className="text-slate-400 group-hover:text-white/90 font-medium leading-relaxed">
                   Whether it’s advocating for fair housing or ensuring every voice is heard at the zoning board, she has stood between the people and bureaucracy for over two decades.
                 </p>
@@ -75,6 +77,10 @@ export const HeartForThePeople = () => {
               <p className="text-[#FFB800] font-bold text-xl uppercase tracking-widest">— A Murfreesboro Resident</p>
             </div>
           </div>
+        </div>
+        <div className="flex w-full p-10 md:justify-center gap-4 md:flex-row flex-col items-center">
+            <VolunteerButton/>
+            <DonateButton/>
         </div>
       </section>
     )

@@ -2,21 +2,21 @@ import { Heart } from "lucide-react"
 
 export const Donations = () => {
     return(
-        <div id="donate" className="w-full lg:w-1/2 bg-[#E53935] text-white p-12 md:p-24 flex flex-col justify-center relative overflow-hidden">
+        <div id="donate" className="w-full  lg:w-1/2 bg-[#E53935] text-white p-12 md:p-24 flex flex-col justify-center relative overflow-hidden">
           <div className="absolute -right-20 -bottom-20 opacity-10 pointer-events-none">
             <Heart size={400} fill="currentColor" />
           </div>
           
           <div className="relative z-10">
             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">
-              Fuel The <span className="text-[#0B0F19]">Fight.</span>
+               <span className="text-yellow-400">Fight</span>  with Scales.
             </h2>
             <p className="text-white/90 font-bold mb-12 text-lg">
               Grassroots campaigns rely on the people. Pitch in today to keep strong, proven leadership on the Murfreesboro City Council.
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-              {[25, 50, 100, 250].map(amount => (
+            <div className="grid grid-cols- grid-cols-3 gap-4 mb-6">
+              {[5, 10, 25, 50, 100, 250].map(amount => (
                 <button key={amount} className="bg-[#0B0F19] hover:bg-white hover:text-[#0B0F19] text-white font-black text-2xl py-4 transition-colors border-2 border-transparent hover:border-[#0B0F19]">
                   ${amount}
                 </button>

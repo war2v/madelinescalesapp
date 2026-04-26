@@ -15,12 +15,28 @@ export const Volunteer = () => {
                 <div>
                 <input type="email" placeholder="Email Address" className="w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] transition-colors font-bold" />
                 </div>
+
+                <div>
+                <input type="text" placeholder="Street" className="w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] transition-colors font-bold" />
+                </div>
+
+                <div className="flex flex-col w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] transition-colors font-bold">
+                    <div className="flex w-full justify-between items-center">
+                        <input type="checkbox" id="yardSign" className="bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] transition-colors font-bold" />
+                        <label>I would like a <span className="text-red-500 uppercase">yard sign</span></label> 
+                    </div> 
+                     
+                </div>
+
                 <div>
                 <input type="tel" placeholder="Phone Number" className="w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] transition-colors font-bold" />
                 </div>
+
+
                 <button type="button" className="w-full bg-[#FFB800] hover:bg-white text-[#0B0F19] font-black uppercase tracking-widest py-4 transition-colors shadow-[4px_4px_0px_#E53935]">
                 I'm In
                 </button>
+                
             </form>
             </div>
     )

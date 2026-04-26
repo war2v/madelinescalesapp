@@ -1,4 +1,8 @@
+"use client";
+
 import { Megaphone } from "lucide-react"
+import { VolunteerButton } from "./VolunteerButton"
+import { DonateButton } from "./DonateButton"
 
 export const Testamonials = () => {
     return(
@@ -19,7 +23,7 @@ export const Testamonials = () => {
                     ].map((testimonial, i) => (
                     <div key={i} className="bg-white p-8 shadow-[8px_8px_0px_#0B0F19] border-2 border-[#0B0F19] transform hover:-translate-y-2 transition-transform">
                         <div className="w-full h-48 bg-slate-800 flex items-center justify-center">
-                            <img src={testimonial.src} alt="Historical Legacy" className="w-full h-48 object-cover grayscale" />
+                            <img src={testimonial.src} alt="Historical Legacy" className="w-full h-48 object-cover " />
                         </div>
                         <div className="text-[#E53935] font-serif text-6xl leading-none h-10">"</div>
                         <p className="text-lg font-bold text-slate-800 mb-6">{testimonial.text}</p>
@@ -30,6 +34,10 @@ export const Testamonials = () => {
                     </div>
                     ))}
                 </div>
+            </div>
+            <div className="flex w-full p-10 md:justify-center gap-4 md:flex-row flex-col items-center">
+                <VolunteerButton className="bg-red-500 text-white"/>
+                <DonateButton className="text-white"/>
             </div>
         </section>
     )

@@ -5,22 +5,20 @@ import Link from "next/link";
 import QRCode from "react-qr-code";
 
 interface FooterProps {
-    date: Number;
-    navLinks: {
-        name: string;
-        href: string;
-    }[];
+  date: Number;
+  navLinks: {
+    name: string;
+    href: string;
+  }[];
 }
-export const Footer = ({navLinks}: FooterProps) => {
-  
-
+export const Footer = ({ navLinks }: FooterProps) => {
   return (
     <footer className="bg-[#0B0F19] w-full text-white pt-24 pb-12 border-t-8 border-[#FFB800]">
       <div className=" mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div>
             <Link
-            href={"#"}
+              href={"#hero"}
               className="flex flex-col items-start gap-0.5 mb-6 group"
             >
               <span className="font-black text-4xl leading-none uppercase tracking-tighter text-white">
@@ -82,7 +80,7 @@ export const Footer = ({navLinks}: FooterProps) => {
             <h4 className="text-[#FFB800] font-black uppercase tracking-widest mb-6">
               Share the Vision
             </h4>
-            <div className="bg-white p-4 inline-block rounded-xl shadow-lg transform rotate-2 hover:rotate-0 transition-transform">
+            <div className="bg-white p-4 inline-block rounded-xl shadow-lg transform transition-transform">
               <QRCode
                 value="https://scalesforcouncil.com"
                 size={120}
@@ -96,7 +94,10 @@ export const Footer = ({navLinks}: FooterProps) => {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 font-medium uppercase tracking-wider">
-          <p>Paid for by the Committee to Elect Scales.</p>
+          <div className="flex flex-col gap-2">
+            <p>Paid for by Madelyn Scales Harris Campaign Fund, </p>
+            <p>Walter J. Harris, Jr. Treasure</p>
+          </div>
           <p>&copy; {} All Rights Reserved.</p>
         </div>
       </div>
