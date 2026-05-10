@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Madeline Scale-Harris",
+  title: "Madelyn Scales Harris",
   description: "Your Voice, Your Choice",
 };
 

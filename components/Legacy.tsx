@@ -52,9 +52,9 @@ export const Legacy = () => {
                   Mayor.
                 </p>
                 <img
-                  src={"images/Dad.jpeg"}
+                  src={"images/dadhistory.png"}
                   alt="Historical Legacy"
-                  className="w-full h-48 object-cover grayscale"
+                  className="w-full h-48 object-cover object-top grayscale"
                 />
               </div>
             </div>
@@ -78,9 +78,9 @@ export const Legacy = () => {
                 </p>
                 <div className="h-48 bg-slate-800 flex items-center justify-center">
                   <img
-                    src={"/images/Mom.jpg"}
+                    src={"/images/MomHistory.png"}
                     alt="Historical Legacy"
-                    className="w-full h-48 object-cover grayscale"
+                    className="w-full h-48 object-cover object-top grayscale"
                   />
                 </div>
               </div>

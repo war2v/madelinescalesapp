@@ -8,6 +8,7 @@ import { Legacy } from "@/components/Legacy";
 import { Markee } from "@/components/Markee";
 import Nav from "@/components/Nav";
 import { Testamonials } from "@/components/Testamonials";
+import { VideoCarousel } from "@/components/VideoCarousel";
 import { Volunteer } from "@/components/Volunteer";
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
       
       <HeartForThePeople/>
       <About/>
+      <VideoCarousel/>
       <Legacy />
       <Testamonials />
       <div className="w-full flex flex-col lg:flex-row">
