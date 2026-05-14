@@ -41,18 +41,18 @@ export const Footer = ({ navLinks }: FooterProps) => {
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-slate-300">
                 <Mail size={18} className="text-[#E53935]" />
-                <span>info@scalesforcouncil.com</span>
+                <span>mscalesharris@murfreesborotn.gov</span>
               </li>
               <li className="flex items-center gap-3 text-slate-300">
                 <Phone size={18} className="text-[#E53935]" />
-                <span>(615) 555-0124</span>
+                <span>(615) 804-8955</span>
               </li>
               <li className="flex items-start gap-3 text-slate-300">
                 <MapPin size={18} className="text-[#E53935] mt-1" />
                 <span>
-                  P.O. Box 1234
+                  P.O. Box 10061
                   <br />
-                  Murfreesboro, TN 37133
+                  Murfreesboro, TN 37129
                 </span>
               </li>
             </ul>
