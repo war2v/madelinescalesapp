@@ -19,11 +19,11 @@ export const About = () => {
 
             <div className="w-full lg:w-1/2 text-white">
               <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
-                Unapologetic.<br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFB800] to-[#E53935]">Unwavering.</span>
+                - Unapologetic -<br/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFB800] to-[#E53935]">- Unwavering -</span>
               </h2>
               
-              <div className="space-y-6 text-lg text-slate-300 font-medium leading-relaxed">
+              <div className="space-y-6 text-xl text-slate-300 font-medium leading-relaxed">
                 <p>
                   For over almost two decades, I have proudly served the people of Murfreesboro. Leadership isn't just a title—it is a calling. When faced with tough decisions, I have never backed down from conflict if it meant protecting our community.
                 </p>

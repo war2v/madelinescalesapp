@@ -1,5 +1,5 @@
 
-import { Heart } from "lucide-react"
+import { FileWarning, Heart } from "lucide-react"
 
 
 
@@ -84,8 +84,8 @@ export const Donations = () => {
                 Donate Now
               </a>
             
-            <p className="text-white/60 text-xs font-bold uppercase mt-4 text-center tracking-wider">
-              Contributions are not tax deductible. Maximum contribution is $1,800 per individual.
+            <p className="text-white/60 text-xl font-bold uppercase mt-4 text-center tracking-wider">
+              Contributions are not tax deductible. Maximum contribution is $1,900 per individual.
             </p>
           </div>
         </div>

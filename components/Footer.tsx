@@ -39,10 +39,7 @@ export const Footer = ({ navLinks }: FooterProps) => {
               Contact
             </h4>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3 text-slate-300">
-                <Mail size={18} className="text-[#E53935]" />
-                <span>mscalesharris@murfreesborotn.gov</span>
-              </li>
+              
               <li className="flex items-center gap-3 text-slate-300">
                 <Phone size={18} className="text-[#E53935]" />
                 <span>(615) 804-8955</span>
@@ -82,7 +79,7 @@ export const Footer = ({ navLinks }: FooterProps) => {
             </h4>
             <div className="bg-white p-4 inline-block rounded-xl shadow-lg transform transition-transform">
               <QRCode
-                value="https://scalesforcouncil.com"
+                value="https://madelynscalesharris.org/"
                 size={120}
                 level="H"
               />
@@ -96,7 +93,7 @@ export const Footer = ({ navLinks }: FooterProps) => {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 font-medium uppercase tracking-wider">
           <div className="flex flex-col gap-2">
             <p>Paid for by Madelyn Scales Harris Campaign Fund, </p>
-            <p>Walter J. Harris, Jr. Treasure</p>
+            <p>Walter J. Harris, Jr. Treasurer</p>
           </div>
           <p>&copy; {} All Rights Reserved.</p>
         </div>

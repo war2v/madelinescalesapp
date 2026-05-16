@@ -29,8 +29,8 @@ const Nav = () => {
     >
       <div className="flex w-full">
         <div className="flex flex-col w-full ">
-          <h1 className="text-2xl font-extrabold uppercase">
-            Scales <span className="hidden md:flex">Harris</span>
+          <h1 className="flex flex-col text-2xl font-extrabold uppercase">
+            <span>Madelyn</span> Scales <span className="hidden md:flex">Harris</span>
           </h1>
           <h3 className="font-semibold text-yellow-400 uppercase">
             For City Council
@@ -65,7 +65,7 @@ const Nav = () => {
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link
-                  href="#"
+                  href="#donate"
                   className="rounded-lg bg-yellow-500 text-lg p-2 font-extrabold text-white flex items-center gap-2"
                 >
                   Volunteer!
@@ -77,25 +77,25 @@ const Nav = () => {
 
         <div className="justify-between font-semibold text-lg items-center w-full uppercase hidden xl:flex ">
           <Link
-            href="#"
+            href="#about"
             className="hover:font-bold hover:text-xl transition-all duration-300"
           >
             About
           </Link>
           <Link
-            href="#"
+            href="#legacy"
             className="hover:font-bold hover:text-xl transition-all duration-300"
           >
             Legacy
           </Link>
           <Link
-            href="#"
+            href="#impact"
             className="hover:font-bold hover:text-xl transition-all duration-300"
           >
             Impact
           </Link>
           <Link
-            href="#"
+            href="#testimonials"
             className="hover:font-bold hover:text-xl transition-all duration-300"
           >
             Testamonials

@@ -30,7 +30,7 @@ export const HeartForThePeople = () => {
               <div className="relative z-10">
                 <HeartHandshake className="text-[#FFB800] w-16 h-16 mb-6 group-hover:text-white transition-colors" />
                 <h3 className="text-2xl text-white font-black uppercase tracking-tight mb-4 group-hover:text-white">Relentless Advocacy for 16 years</h3>
-                <p className="text-slate-400 group-hover:text-white/90 font-medium leading-relaxed">
+                <p className="text-slate-400 group-hover:text-white/90 font-medium leading-relaxed text-xl">
                   Whether it’s advocating for fair housing or ensuring every voice is heard at the zoning board, she has stood between the people and bureaucracy for over two decades.
                 </p>
               </div>
@@ -45,7 +45,7 @@ export const HeartForThePeople = () => {
               <div className="relative z-10">
                 <ShieldCheck className="text-[#E53935] w-16 h-16 mb-6 group-hover:text-[#0B0F19] transition-colors" />
                 <h3 className="text-2xl text-white font-black uppercase tracking-tight mb-4 group-hover:text-[#0B0F19]">Standing Firm in Conflict</h3>
-                <p className="text-slate-400 group-hover:text-[#0B0F19]/90 font-medium leading-relaxed">
+                <p className="text-xl text-slate-400 group-hover:text-[#0B0F19]/90 font-medium leading-relaxed">
                   Not afraid to be the dissenting vote when it matters. True leadership requires the courage to stand alone when the community's best interests are on the line.
                 </p>
               </div>
@@ -60,7 +60,7 @@ export const HeartForThePeople = () => {
               <div className="relative z-10">
                 <Scale className="text-[#FFB800] w-16 h-16 mb-6 group-hover:text-white transition-colors" />
                 <h3 className="text-2xl text-white font-black uppercase tracking-tight mb-4 group-hover:text-white">Women in Leadership</h3>
-                <p className="text-slate-400 group-hover:text-white/90 font-medium leading-relaxed">
+                <p className="text-xl text-slate-400 group-hover:text-white/90 font-medium leading-relaxed">
                   As the only woman on the council for 10 years, she broke barriers and fought relentlessly to ensure women are represented in every major city decision.
                 </p>
               </div>
