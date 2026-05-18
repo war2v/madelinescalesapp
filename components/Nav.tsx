@@ -28,13 +28,15 @@ const Nav = () => {
       className={`fixed top-0 flex w-full px-10 py-3 text-white bg-slate-950 transition-colors duration-400 ease-out z-100 ${scrollPos ? `bg-black/80 backdrop-blur-md` : `bg-transparent backdrop-blur-0`}`}
     >
       <div className="flex w-full">
-        <div className="flex flex-col w-full ">
-          <h1 className="flex flex-col text-2xl font-extrabold uppercase">
-            <span>Madelyn</span> Scales <span className="hidden md:flex">Harris</span>
-          </h1>
-          <h3 className="font-semibold text-yellow-400 uppercase">
-            For City Council
-          </h3>
+        <div className="w-full ">
+          <div  className="flex w-max flex-col">
+            <h1 className="flex flex-col text-2xl font-extrabold uppercase animate-shine">
+              <span>Madelyn</span> Scales <span className="hidden md:flex">Harris</span>
+            </h1>
+            <h3 className="font-semibold text-yellow-400 uppercase">
+              For City Council
+            </h3>
+          </div>
         </div>
 
         <div className="w-full flex justify-end xl:hidden">

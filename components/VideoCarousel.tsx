@@ -76,18 +76,7 @@ export const VideoCarousel = () => {
                           
                           
                           
-                          {/* Video Info/Quote Overlay */}
-                          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 pt-24 rounded-bl-2xl">
-                            <div className="border-l-4 border-[#FFB800] pl-4">
-                              <p className="text-white font-bold italic mb-2">"{video.quote}"</p>
-                              <p className="text-[#FFB800] font-black uppercase text-xs tracking-widest">— {video.name}</p>
-                            </div>
-                          </div>
-
-                          {/* Timestamp mock */}
-                          <div className="absolute top-4 right-4 bg-black/60 px-3 py-1 text-white font-bold text-sm tracking-wider rounded">
-                            {video.time}
-                          </div>
+                          
                         </div>
                       </CarouselItem>
                     ))}

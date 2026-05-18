@@ -21,8 +21,8 @@ export const Footer = ({ navLinks }: FooterProps) => {
               href={"#hero"}
               className="flex flex-col items-start gap-0.5 mb-6 group"
             >
-              <span className="font-black text-4xl leading-none uppercase tracking-tighter text-white">
-                Scales
+              <span className="flex flex-col font-black text-4xl leading-none uppercase tracking-tighter text-white">
+                Madelyn <span>Scales Harris</span>
               </span>
               <span className="font-bold text-sm uppercase tracking-[0.2em] text-[#FFB800]">
                 For City Council

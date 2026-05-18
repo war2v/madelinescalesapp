@@ -54,7 +54,7 @@ export const Legacy = () => {
                 <img
                   src={"images/dadhistory.png"}
                   alt="Historical Legacy"
-                  className="w-full h-48 object-cover object-top grayscale"
+                  className="w-full h-72 object-cover object-top grayscale"
                 />
               </div>
             </div>
@@ -76,11 +76,11 @@ export const Legacy = () => {
                   leadership is about compassion, strength, and unwavering
                   dedication.
                 </p>
-                <div className="h-48 bg-slate-800 flex items-center justify-center">
+                <div className="h-72 bg-slate-800 flex items-center justify-center">
                   <img
                     src={"/images/MomHistory.png"}
                     alt="Historical Legacy"
-                    className="w-full h-48 object-cover object-top grayscale"
+                    className="w-full h-72 object-cover object-top grayscale"
                   />
                 </div>
               </div>
@@ -116,7 +116,7 @@ export const Legacy = () => {
                 <img
                   src={"images/school.webp"}
                   alt="Scales Elementary"
-                  className="w-full h-48 object-cover mb-4"
+                  className="w-full h-72 object-cover mb-4"
                 />
                 <h3 className="md:hidden text-2xl font-black text-[#0B0F19] uppercase tracking-tighter mb-2">
                   Scales Elementary

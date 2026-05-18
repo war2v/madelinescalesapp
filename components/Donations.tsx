@@ -23,7 +23,7 @@ export const Donations = () => {
 
             <div className="grid  grid-cols-3 gap-4 mb-6">
               
-                <a href={"https://donate.stripe.com/28E9AT5Q5diD5cz18W6Vq00"}
+                <a href={"https://donate.stripe.com/00w9AT7YdemH7kH7xk6Vq06"}
                    target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#0B0F19] hover:bg-white text-white hover:text-[#0B0F19] font-black text-2xl py-4 flex items-center justify-center transition-colors">

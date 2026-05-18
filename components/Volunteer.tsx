@@ -181,6 +181,26 @@ export const Volunteer = () => {
           className="w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] font-bold"
         />
 
+        <input
+          required
+          name="city"
+          type="text"
+          placeholder="City"
+          value={formData.street}
+          onChange={handleInputChange}
+          className="w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] font-bold"
+        />
+
+        <input
+          required
+          name="state"
+          type="text"
+          placeholder="State"
+          value={formData.street}
+          onChange={handleInputChange}
+          className="w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] font-bold"
+        />
+
 
         <input
           required
@@ -221,20 +241,8 @@ export const Volunteer = () => {
               label: "I Want A Yard Sign",
             },
             {
-              name: "voter_registration_assistance",
-              label: "Voter Registration Assistance",
-            },
-            {
               name: "election_day_support",
               label: "Poll Worker / Election Day Support",
-            },
-            {
-              name: "yard_sign_distribution",
-              label: "Yard Sign Distribution",
-            },
-            {
-              name: "flyer_distribution",
-              label: "Flyer / Literature Distribution",
             },
             {
               name: "social_media_support",

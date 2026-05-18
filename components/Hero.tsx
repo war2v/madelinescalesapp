@@ -21,7 +21,7 @@ const Hero = () => {
           <img
             src={`/images/close.webp`}
             alt="Community Gathering"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-left"
           />
         </motion.div>
 
@@ -29,7 +29,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
             className="mb-10 pb-10"
           >
             
@@ -45,23 +45,31 @@ const Hero = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 1.6, delay: 0.4 }}
             className="sm:text-xl md:text-2xl text-slate-200 font-bold max-w-3xl mx-auto mb-12 drop-shadow-lg"
           >
             16 Years of Unyielding Service. Standing Firm in Conflict. Always
             Fighting for You.
           </motion.p>
 
-          <div className="flex w-full md:justify-center gap-4 md:flex-row flex-col items-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            className="flex w-full md:justify-center gap-4 md:flex-row flex-col items-center">
             <VolunteerButton />
             <DonateButton />
-          </div>
+          </motion.div>
 
-          <div className="pt-36">
-            <span className="inline-block xs:py-1 xs:hidden py-6 px-8 bg-[#FFB800] text-[#0B0F19] font-black text-md uppercase tracking-[0.3em] mb-6 shadow-xl transform">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            className="pt-36">
+            <span className="inline-block xs:py-1 xs:hidden py-5 px-7 bg-[#FFB800] text-[#0B0F19] font-black text-lg uppercase tracking-[0.3em] mb-6 shadow-xl transform">
               Re-Elect Murfreesboro's Voice
             </span>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

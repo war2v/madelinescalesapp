@@ -69,7 +69,7 @@ export const HeartForThePeople = () => {
           
           <div className="mt-20 relative h-[400px] w-full bg-[#0B0F19] flex items-center overflow-hidden">
             <div className="absolute inset-0 opacity-40 mix-blend-luminosity">
-              <img src={"/images/Happy.webp"} alt="Helping Hands" className="w-full h-full object-cover" />
+              <img src={"/images/Happy.webp"} alt="Helping Hands" className="w-full h-full object-cover object-center xl:object-[10%]" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F19] via-[#0B0F19]/80 to-transparent" />
             <div className="relative z-10 p-8 md:p-16 max-w-2xl">
