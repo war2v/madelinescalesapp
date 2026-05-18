@@ -22,8 +22,8 @@ export const Testamonials = () => {
                     { text: "It's rare to find a politician who actually answers their phone and shows up to community meetings even when it's not election season. She is the real deal.", author: "Elena R.", area: "Community Advocate", src:"/images/LittleDot.jpeg" }
                     ].map((testimonial, i) => (
                     <div key={i} className="bg-white p-8 shadow-[8px_8px_0px_#0B0F19] border-2 border-[#0B0F19] transform hover:-translate-y-2 transition-transform">
-                        <div className="w-full h-48 bg-slate-800 flex items-center justify-center">
-                            <img src={testimonial.src} alt="Historical Legacy" className="w-full h-48 object-cover object-top " />
+                        <div className="w-full h-72 bg-slate-800 flex items-center justify-center">
+                            <img src={testimonial.src} alt="Historical Legacy" className="w-full h-72 object-cover object-top " />
                         </div>
                         <div className="text-[#E53935] font-serif text-6xl leading-none h-10">"</div>
                         <p className="text-lg font-bold text-slate-800 mb-6">{testimonial.text}</p>

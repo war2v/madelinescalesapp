@@ -10,7 +10,7 @@ export const About = () => {
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="w-full lg:w-1/2 relative">
               <div className="absolute inset-0 bg-[#E53935] transform translate-x-6 translate-y-6" />
-              <img src={"/images/scales.webp"} alt="Candidate Portrait" className="relative z-10 w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 object-cover shadow-2xl" />
+              <img src={"/images/scales.jpg"} alt="Candidate Portrait" className="relative z-10 w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 object-cover shadow-2xl" />
               <div className="absolute -bottom-8 -left-8 bg-[#FFB800] text-[#0B0F19] p-6 z-20 shadow-xl">
                 <span className="block text-6xl font-black tracking-tighter leading-none">16</span>
                 <span className="block text-sm font-bold uppercase tracking-widest mt-1">Years of<br/>Service</span>

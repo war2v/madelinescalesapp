@@ -19,9 +19,9 @@ const Hero = () => {
           
           <div className="absolute inset-0 bg-black/20 mix-blend-multiply z-10" />
           <img
-            src={`/images/close.webp`}
+            src={`/images/close.jpg`}
             alt="Community Gathering"
-            className="w-full h-full object-cover object-left"
+            className="w-full h-full object-cover"
           />
         </motion.div>
 
