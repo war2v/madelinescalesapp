@@ -28,16 +28,33 @@ const Nav = () => {
       className={`fixed top-0 flex w-full px-10 py-3 text-white bg-slate-950 transition-colors duration-400 ease-out z-100 ${scrollPos ? `bg-black/80 backdrop-blur-md` : `bg-transparent backdrop-blur-0`}`}
     >
       <div className="flex w-full">
-        <div className="w-full ">
-          <div  className="flex w-max flex-col">
-            <h1 className="flex flex-col text-2xl font-extrabold uppercase animate-shine">
-              <span>Madelyn</span> Scales <span className="hidden md:flex">Harris</span>
-            </h1>
-            <h3 className="font-semibold text-yellow-400 uppercase">
-              For City Council
-            </h3>
-          </div>
-        </div>
+       <div className="w-full">
+        <div className="flex w-max flex-col group cursor-pointer">
+          
+          <h1 className="relative flex flex-col text-3xl md:text-4xl font-black uppercase tracking-tight leading-none">
+            
+            <span className="text-white">
+              Madeline
+            </span>
+
+            <span className="hidden md:flex items-center gap-2">
+              <span className="text-[#FFB800] relative">
+                Scales
+
+                <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-[#FFB800] transition-all duration-500 group-hover:w-full" />
+              </span>
+
+              <span className="text-white">
+                Harris
+              </span>
+            </span>
+          </h1>
+
+    <h3 className="mt-2 text-sm md:text-base font-bold tracking-[0.2em] text-yellow-400 uppercase">
+      For City Council
+    </h3>
+  </div>
+</div>
 
         <div className="w-full flex justify-end xl:hidden">
           <DropdownMenu>
