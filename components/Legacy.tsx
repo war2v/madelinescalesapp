@@ -51,11 +51,13 @@ export const Legacy = () => {
                   since Reconstruction and Murfreesboro’s first Black Vice
                   Mayor.
                 </p>
-                <img
-                  src={"images/dadhistory.png"}
-                  alt="Historical Legacy"
-                  className="w-full h-full object-cover object-top grayscale"
-                />
+                <div className="relative w-full overflow-hidden">
+                    <img
+                    src={"images/dadhistory.png"}
+                    alt="Historical Legacy"
+                    className="w-full h-full object-cover object-top grayscale"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -76,7 +78,7 @@ export const Legacy = () => {
                   leadership is about compassion, strength, and unwavering
                   dedication.
                 </p>
-                <div className="h-72 sm:h-full bg-slate-800 flex items-center justify-center">
+                <div className="relative w-full overflow-hidden">
                   <img
                     src={"/images/MomHistory.png"}
                     alt="Historical Legacy"
