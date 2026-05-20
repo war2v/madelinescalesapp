@@ -34,7 +34,7 @@ const Nav = () => {
           <h1 className="relative flex flex-col text-3xl md:text-4xl font-black uppercase tracking-tight leading-none">
             
             <span className="text-white">
-              Madeline
+              Madelyn
             </span>
 
             <span className="hidden md:flex items-center gap-2">
