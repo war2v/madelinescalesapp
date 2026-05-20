@@ -18,7 +18,7 @@ export const About = () => {
             </div>
 
             <div className="w-full lg:w-1/2 text-white">
-              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
+              <h2 className="text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
                 - Unapologetic -<br/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFB800] to-[#E53935]">- Unwavering -</span>
               </h2>
