@@ -55,6 +55,7 @@ export const Legacy = () => {
                     <img
                     src={"images/dadhistory.png"}
                     alt="Historical Legacy"
+                    aria-orientation="vertical"
                     className="w-full h-full object-cover object-top grayscale"
                   />
                 </div>
