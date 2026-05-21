@@ -3,6 +3,7 @@
 import { History, UserCheck } from "lucide-react";
 import { VolunteerButton } from "./VolunteerButton";
 import { DonateButton } from "./DonateButton";
+import Image from "next/image";
 
 
 export const Legacy = () => {
@@ -52,7 +53,7 @@ export const Legacy = () => {
                   Mayor.
                 </p>
                 <div className="relative w-full aspect-[4/5] overflow-hidden">
-                    <img
+                    <Image
                     src={"images/dadhistory.png"}
                     alt="Historical Legacy"
                     aria-orientation="vertical"
@@ -80,7 +81,7 @@ export const Legacy = () => {
                   dedication.
                 </p>
                 <div className="relative w-full overflow-hidden">
-                  <img
+                  <Image
                     src={"/images/MomHistory.png"}
                     alt="Historical Legacy"
                     className="w-full h-full object-cover object-top grayscale"
@@ -116,7 +117,7 @@ export const Legacy = () => {
             <div className="absolute left-4 md:left-1/2 w-6 h-6 bg-[#0B0F19] border-4 border-slate-100 rounded-full transform -translate-x-1/2 z-10 shadow-lg group-hover:scale-150 transition-transform" />
             <div className="w-full md:w-5/12 pl-12 md:pl-8">
               <div className="bg-white p-6 shadow-xl border-t-4 border-[#0B0F19]">
-                <img
+                <Image
                   src={"images/school.webp"}
                   alt="Scales Elementary"
                   className="w-full h-72 object-cover mb-4"
