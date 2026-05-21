@@ -54,7 +54,9 @@ export const Legacy = () => {
                 </p>
                 <div className="relative w-full aspect-[4/5] overflow-hidden">
                     <Image
-                    src={"images/dadhistory.png"}
+                    src={"/images/dadhistory.png"}
+                    width={500}
+                    height={500}
                     alt="Historical Legacy"
                     aria-orientation="vertical"
                     className="w-full h-full object-cover object-top grayscale"
@@ -83,6 +85,9 @@ export const Legacy = () => {
                 <div className="relative w-full overflow-hidden">
                   <Image
                     src={"/images/MomHistory.png"}
+                    objectFit="true"
+                    width={500}
+                    height={500}
                     alt="Historical Legacy"
                     className="w-full h-full object-cover object-top grayscale"
                   />
@@ -118,8 +123,11 @@ export const Legacy = () => {
             <div className="w-full md:w-5/12 pl-12 md:pl-8">
               <div className="bg-white p-6 shadow-xl border-t-4 border-[#0B0F19]">
                 <Image
-                  src={"images/school.webp"}
+                  src={"/images/school.webp"}
                   alt="Scales Elementary"
+                  objectFit="true"
+                  width={500}
+                  height={500}
                   className="w-full h-72 object-cover mb-4"
                 />
                 <h3 className="md:hidden text-2xl font-black text-[#0B0F19] uppercase tracking-tighter mb-2">
