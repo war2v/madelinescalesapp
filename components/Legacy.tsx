@@ -48,18 +48,18 @@ export const Legacy = () => {
                   Breaking Barriers
                 </h3>
                 <p className="md:hidden text-slate-600 font-medium mb-4">
-                  Daughter of the first African American elected in the South
+                  Daughter of the first African American Councilman elected in the South
                   since Reconstruction and Murfreesboro’s first Black Vice
                   Mayor.
                 </p>
-                <div className="relative w-full aspect-[4/5] overflow-hidden">
+                <div className="relative w-full aspect-4/5 overflow-hidden">
                     <Image
                     src={"/images/dadhistory.png"}
                     width={500}
                     height={500}
                     alt="Historical Legacy"
-                    aria-orientation="vertical"
-                    className="w-full h-full object-cover object-top grayscale"
+  
+                    className="w-full h-full object-cover grayscale"
                   />
                 </div>
               </div>
