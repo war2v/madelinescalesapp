@@ -51,7 +51,7 @@ export const Legacy = () => {
                   since Reconstruction and Murfreesboro’s first Black Vice
                   Mayor.
                 </p>
-                <div className="relative w-full overflow-hidden">
+                <div className="relative w-full aspect-[4/5] overflow-hidden">
                     <img
                     src={"images/dadhistory.png"}
                     alt="Historical Legacy"
