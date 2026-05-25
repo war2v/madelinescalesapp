@@ -14,7 +14,7 @@ export const DonateButton = ({className}: DonateButtonProps) => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className={`md:flex flex-col sm:flex-row hidden gap-6 items-center ${className}`}
             >
-            <Link href="#volunteer" className={`group flex items-center justify-center gap-3 bg-red-500 hover:bg-white text-[#0B0F19] px-10 py-5 text-xl font-black uppercase tracking-widest transition-all shadow-[8px_8px_0px_#E53935] hover:shadow-[4px_4px_0px_#E53935] hover:translate-x-1 hover:translate-y-1 ${className}`}>
+            <Link href="#volunteer" className={`landscape:px-4 landscape:py-6 landscape:text-lg group flex items-center justify-center gap-3 bg-red-500 hover:bg-white text-[#0B0F19] px-10 py-5 text-xl font-black uppercase tracking-widest transition-all shadow-[8px_8px_0px_#E53935] hover:shadow-[4px_4px_0px_#E53935] hover:translate-x-1 hover:translate-y-1 ${className}`}>
                Fight with Scales <Heart size={24} className="group-hover:translate-x-1 transition-transform" />
             </Link>
         </motion.div>

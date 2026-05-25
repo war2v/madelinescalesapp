@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className=" pt-60 relative h-screen w-full flex items-center justify-center overflow-hidden bg-black"
+      className="landscape:pt-20 portrait:pt-60 relative h-screen w-full flex items-center justify-center overflow-hidden bg-black"
     >
       <div className="min-w-3xl">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
@@ -30,10 +30,10 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            className="mb-10 pb-10"
+            className="mb-10 pb-10 landscape:mb-0 landscape:pb-0" 
           >
             
-            <h1 className="text-4xl sm:text-4xl  md:text-5xl lg:text-6xl xl:text-7xl font-black text-white uppercase tracking-wide leading-[0.9] max-w-5xl mx-auto drop-shadow-2xl">
+            <h1 className="text-4xl landscape:text-4xl sm:text-4xl  md:text-5xl lg:text-6xl xl:text-7xl font-black text-white uppercase tracking-wide leading-[0.9] max-w-5xl mx-auto drop-shadow-2xl">
               Leading With My{" "}
               <span className="flex text-[#E53935] justify-center items-center gap-2 transform">
                 Heart{" "}
@@ -46,7 +46,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.6, delay: 0.4 }}
-            className="sm:text-xl md:text-2xl text-slate-200 font-bold max-w-3xl mx-auto mb-12 drop-shadow-lg"
+            className=" sm:text-xl md:text-2xl landscape:text-lg  text-slate-200 font-bold max-w-3xl  mx-auto drop-shadow-lg"
           >
             16 Years of Unyielding Service. Standing Firm in Conflict. Always
             Fighting for You.
@@ -56,17 +56,18 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            className="flex w-full md:justify-center gap-4 md:flex-row flex-col items-center">
+            className="flex w-full m-10 md:justify-center gap-4 md:flex-row flex-col items-center">
             <VolunteerButton />
             <DonateButton />
           </motion.div>
+          
 
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            className="pt-36">
-            <span className="inline-block xs:py-1 xs:hidden py-5 px-7 bg-[#FFB800] text-[#0B0F19] font-black text-lg uppercase tracking-[0.3em] mb-6 shadow-xl transform">
+            className="pt-36 landscape:pt-10">
+            <span className="inline-block xs:py-1 xs:hidden py-5 px-7 landscape:py-2 landscape:px-3 bg-[#FFB800] text-[#0B0F19] font-black text-lg uppercase tracking-[0.3em] shadow-xl transform">
               Re-Elect Murfreesboro's Voice
             </span>
           </motion.div>
