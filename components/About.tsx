@@ -18,14 +18,14 @@ export const About = () => {
             </div>
 
             <div className="w-full lg:w-1/2 text-white">
-              <h2 className="text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
+              <h2 className="text-4xl xs:2xl sm:text-3xl lg:text-5xl xl:text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
                 - Unapologetic -<br/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFB800] to-[#E53935]">- Unwavering -</span>
               </h2>
               
               <div className="space-y-6 text-xl text-slate-300 font-medium leading-relaxed">
                 <p>
-                  For over almost two decades, I have proudly served the people of Murfreesboro. Leadership isn't just a title—it is a calling. When faced with tough decisions, I have never backed down from conflict if it meant protecting our community.
+                  For almost two decades, I have proudly served the people of Murfreesboro. Leadership isn't just a title—it is a calling. When faced with tough decisions, I have never backed down from conflict if it meant protecting our community.
                 </p>
                 <p>
                   As the <strong className="text-white">only woman on the city council for 10 years</strong>, I learned early on that representation matters. Our city makes the best decisions when every voice is heard, and I have made it my mission to ensure women always have a seat at the leadership table.
