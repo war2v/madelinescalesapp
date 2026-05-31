@@ -1,37 +1,12 @@
-"use client"
+
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 
-export const VideoCarousel = () => {
-    const videoTestimonials = [
-    {
-      id: 1,
-      name: "Her Granddaughter",
-      quote: "Good luck, Grandma! I know you're going to win because you always fight for what's right.",
-      image: "/videos/SlowMo.MOV",
-      time: "0:45"
-    },
-    {
-      id: 2,
-      name: "Marcus, First-Time Voter",
-      quote: "She inspired me to finally register to vote. She actually listens to the younger generation instead of just talking over us.",
-      image: "/videos/Dot3.mov",
-      time: "1:12"
-    },
-    {
-      id: 3,
-      name: "Elena, College Student",
-      quote: "When we marched for safer streets, she was right there with us. She doesn't just promise things, she shows up.",
-      image: "/videos/Dot2.mov",
-      time: "0:58"
-    },
-    {
-      id: 4,
-      name: "Marcus, First-Time Voter",
-      quote: "She inspired me to finally register to vote. She actually listens to the younger generation instead of just talking over us.",
-      image: "/videos/Dot.mov",
-      time: "1:12"
-    },
-  ];
+interface VideoCarouselProps {
+  videoTestimonials: any[]
+}
+
+export const VideoCarousel = ({videoTestimonials}: VideoCarouselProps) => {
+    
 
     return (
         <section className="py-24 w-full  overflow-hidden relative border-t-8 border-[#E53935]">
@@ -61,7 +36,7 @@ export const VideoCarousel = () => {
                   className="w-full"
                 >
                   <CarouselContent>
-                    {videoTestimonials.map((video) => (
+                    {videoTestimonials?.map((video) => (
                       <CarouselItem key={video.id}>
                         <div className="relative group cursor-pointer outline-none">
                           <video 

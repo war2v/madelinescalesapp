@@ -36,7 +36,7 @@ export const Legacy = () => {
                 Breaking Barriers
               </h3>
               <p className="text-slate-600 font-medium mt-2">
-                Daughter of the first African American elected in the South
+                Daughter of the first black Council American elected in the South
                 since Reconstruction and Murfreesboro’s first Black Vice Mayor.
               </p>
             </div>

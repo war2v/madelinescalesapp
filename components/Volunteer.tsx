@@ -1,15 +1,14 @@
 "use client";
 
-import { supabaseAdmin } from "@/lib/supabase/server";
+import { supabase } from "@/lib/supabase/server";
 import { useState } from "react";
-
 
 type VolunteerFormData = {
   first_name: string;
   last_name: string;
   email: string;
   phone_number: string;
-  street: string;
+  street_address: string;
   city: string;
   state: string;
   zip_code: string;
@@ -27,7 +26,7 @@ const initialFormData: VolunteerFormData = {
   last_name: "",
   email: "",
   phone_number: "",
-  street: "",
+  street_address: "",
   city: "",
   state: "TN",
   zip_code: "",
@@ -41,57 +40,63 @@ const initialFormData: VolunteerFormData = {
 };
 
 export const Volunteer = () => {
-  const [formData, setFormData] =
-    useState<VolunteerFormData>(initialFormData);
+  const [formData, setFormData] = useState<VolunteerFormData>(initialFormData);
 
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value, type } = e.target;
 
     setFormData((prev) => ({
       ...prev,
       [name]:
-        type === "checkbox"
-          ? (e.target as HTMLInputElement).checked
-          : value,
+        type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
     }));
   };
 
-  const handleSubmit = async (
-    e: React.FormEvent<HTMLFormElement>
-  ) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     setLoading(true);
     setSuccessMessage("");
     setErrorMessage("");
 
-    const supabase = supabaseAdmin
 
     try {
       const { error } = await supabase.from("volunteers").insert([
         {
           full_name: formData.first_name.trim() + " " + formData.last_name.trim(),
+
           email: formData.email.trim().toLowerCase(),
+
           phone_number: formData.phone_number.trim() || null,
-          street: formData.street.trim() || null,
+
+          street_address: formData.street_address.trim() || null,
+
           city: formData.city.trim() || null,
-          state: formData.state.trim() || "TN",
+
+          state: formData.state.trim() || null,
+
           zip_code: formData.zip_code.trim() || null,
+
           wants_yard_sign: formData.wants_yard_sign,
-          voter_registration_assistance:
-            formData.voter_registration_assistance,
+
+          voter_registration_assistance: formData.voter_registration_assistance,
+
           election_day_support: formData.election_day_support,
+
           yard_sign_distribution: formData.yard_sign_distribution,
+
           flyer_distribution: formData.flyer_distribution,
+
           social_media_support: formData.social_media_support,
-          availability_notes:
-            formData.availability_notes.trim() || null,
+
+          availability_notes: formData.availability_notes.trim() || null,
+
           signup_source: "website",
         },
       ]);
@@ -101,7 +106,7 @@ export const Volunteer = () => {
       }
 
       setSuccessMessage(
-        "Thank you for joining the campaign. We will be in touch soon."
+        "Thank you for joining the campaign. We will be in touch soon.",
       );
 
       setFormData(initialFormData);
@@ -109,12 +114,10 @@ export const Volunteer = () => {
       console.error("Volunteer form submission error:", error);
 
       if (error?.code === "23505") {
-        setErrorMessage(
-          "This email is already registered as a volunteer."
-        );
+        setErrorMessage("This email is already registered as a volunteer.");
       } else {
         setErrorMessage(
-          "Something went wrong while submitting the form. Please try again."
+          "Something went wrong while submitting the form. Please try again.",
         );
       }
     } finally {
@@ -132,15 +135,11 @@ export const Volunteer = () => {
       </h2>
 
       <p className="text-slate-400 font-medium mb-12 text-lg">
-        A campaign is only as strong as its community. Sign up to knock
-        doors, make calls, or host a yard sign. Your time makes the
-        difference.
+        A campaign is only as strong as its community. Sign up to knock doors,
+        make calls, or host a yard sign. Your time makes the difference.
       </p>
 
-      <form
-        onSubmit={handleSubmit}
-        className="space-y-6 max-w-md"
-      >
+      <form onSubmit={handleSubmit} className="space-y-6 max-w-md">
         <input
           name="first_name"
           type="text"
@@ -176,7 +175,7 @@ export const Volunteer = () => {
           name="street_address"
           type="text"
           placeholder="Street Address"
-          value={formData.street}
+          value={formData.street_address}
           onChange={handleInputChange}
           className="w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] font-bold"
         />
@@ -186,7 +185,7 @@ export const Volunteer = () => {
           name="city"
           type="text"
           placeholder="City"
-          value={formData.street}
+          value={formData.city}
           onChange={handleInputChange}
           className="w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] font-bold"
         />
@@ -196,11 +195,10 @@ export const Volunteer = () => {
           name="state"
           type="text"
           placeholder="State"
-          value={formData.street}
+          value={formData.state}
           onChange={handleInputChange}
           className="w-full bg-slate-800/50 border border-slate-700 text-white p-4 focus:outline-none focus:border-[#FFB800] focus:ring-1 focus:ring-[#FFB800] font-bold"
         />
-
 
         <input
           required
@@ -231,9 +229,7 @@ export const Volunteer = () => {
         />
 
         <div className="bg-slate-800/50 border border-slate-700 p-4 space-y-4">
-          <p className="text-xl font-bold">
-            Volunteer Interests
-          </p>
+          <p className="text-xl font-bold">Volunteer Interests</p>
 
           {[
             {
@@ -253,17 +249,13 @@ export const Volunteer = () => {
               key={item.name}
               className="flex items-center justify-between"
             >
-              <span className="text-slate-300">
-                {item.label}
-              </span>
+              <span className="text-slate-300">{item.label}</span>
 
               <input
                 type="checkbox"
                 name={item.name}
                 checked={
-                  formData[
-                    item.name as keyof VolunteerFormData
-                  ] as boolean
+                  formData[item.name as keyof VolunteerFormData] as boolean
                 }
                 onChange={handleInputChange}
                 className="hover:cursor-pointer "
@@ -273,16 +265,10 @@ export const Volunteer = () => {
         </div>
 
         {successMessage && (
-          <p className="text-green-400 text-sm">
-            {successMessage}
-          </p>
+          <p className="text-green-400 text-sm">{successMessage}</p>
         )}
 
-        {errorMessage && (
-          <p className="text-red-400 text-sm">
-            {errorMessage}
-          </p>
-        )}
+        {errorMessage && <p className="text-red-400 text-sm">{errorMessage}</p>}
 
         <button
           type="submit"

@@ -46,7 +46,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.6, delay: 0.4 }}
-            className=" sm:text-xl md:text-2xl landscape:text-lg  text-slate-200 font-bold max-w-3xl  mx-auto drop-shadow-lg"
+            className="w-72 sm:w-full sm:text-xl md:text-2xl landscape:text-lg  text-slate-200 font-bold max-w-3xl  mx-auto drop-shadow-lg"
           >
             16 Years of Unyielding Service. Standing Firm in Conflict. Always
             Fighting for You.

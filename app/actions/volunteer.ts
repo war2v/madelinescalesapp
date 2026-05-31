@@ -1,6 +1,6 @@
 "use server";
 
-import { supabaseAdmin } from "@/lib/supabase/server";
+import { supabase } from "@/lib/supabase/server";
 
 export async function submitVolunteer(formData: FormData) {
     const first_name = formData.get("first_name") as string;
@@ -14,7 +14,7 @@ export async function submitVolunteer(formData: FormData) {
 
     const voter_regristration_assistance = formData.get("voter_registration_assistance") === "on";
 
-    const { error } = await supabaseAdmin
+    const { error } = await supabase
         .from("volunteers")
         .insert([
             {

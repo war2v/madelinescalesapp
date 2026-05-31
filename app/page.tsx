@@ -7,17 +7,52 @@ import Hero from "@/components/Hero";
 import { Legacy } from "@/components/Legacy";
 import { Markee } from "@/components/Markee";
 import Nav from "@/components/Nav";
-import { Testamonials } from "@/components/Testamonials";
+import { Testimonials } from "@/components/Testamonials";
 import { VideoCarousel } from "@/components/VideoCarousel";
 import { Volunteer } from "@/components/Volunteer";
+import { supabase } from "@/lib/supabase/server";
 
-export default function Home() {
+export default async function Home() {
   const navLinks = [
     { name: "About", href: "#about" },
     { name: "Legacy", href: "#legacy" },
     { name: "Impact", href: "#impact" },
     { name: "Testimonials", href: "#testimonials" },
   ];
+
+  const videoTestimonials = [
+    {
+      id: 1,
+      name: "Her Granddaughter",
+      quote: "Good luck, Grandma! I know you're going to win because you always fight for what's right.",
+      image: "/videos/SlowMo.MOV",
+      time: "0:45"
+    },
+    {
+      id: 2,
+      name: "Marcus, First-Time Voter",
+      quote: "She inspired me to finally register to vote. She actually listens to the younger generation instead of just talking over us.",
+      image: "/videos/Dot3.mov",
+      time: "1:12"
+    },
+    {
+      id: 3,
+      name: "Elena, College Student",
+      quote: "When we marched for safer streets, she was right there with us. She doesn't just promise things, she shows up.",
+      image: "/videos/Dot2.mov",
+      time: "0:58"
+    },
+    {
+      id: 4,
+      name: "Marcus, First-Time Voter",
+      quote: "She inspired me to finally register to vote. She actually listens to the younger generation instead of just talking over us.",
+      image: "/videos/Dot.mov",
+      time: "1:12"
+    },
+  ];
+
+  const {data: testimonials, error} = await supabase.from("testimonials").select('*')
+
 
   const date = new Date().getFullYear();
   return (
@@ -33,9 +68,9 @@ export default function Home() {
       
       <HeartForThePeople/>
       <About/>
-      <VideoCarousel/>
+      <VideoCarousel videoTestimonials={videoTestimonials}/>
       <Legacy />
-      <Testamonials />
+      <Testimonials testimonial_list={testimonials}/>
       <div className="w-full flex flex-col lg:flex-row">
         <Volunteer />
         <Donations />
