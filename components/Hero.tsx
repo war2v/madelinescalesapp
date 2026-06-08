@@ -16,7 +16,6 @@ const Hero = () => {
     >
       <div className="min-w-3xl">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
-          
           <div className="absolute inset-0 bg-black/20 mix-blend-multiply z-10" />
           <img
             src={`/images/close.jpg`}
@@ -30,9 +29,8 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            className="mb-10 pb-10 landscape:mb-0 landscape:pb-0" 
+            className="mb-10 pb-10 landscape:mb-0 landscape:pb-0"
           >
-            
             <h1 className="text-4xl landscape:text-4xl sm:text-4xl  md:text-5xl lg:text-6xl xl:text-7xl font-black text-white uppercase tracking-wide leading-[0.9] max-w-5xl mx-auto drop-shadow-2xl">
               Leading With My{" "}
               <span className="flex text-[#E53935] justify-center items-center gap-2 transform">
@@ -56,17 +54,18 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            className="flex w-full m-10 md:justify-center gap-4 md:flex-row flex-col items-center">
+            className="flex w-full m-10 md:justify-center gap-4 md:flex-row flex-col items-center"
+          >
             <VolunteerButton />
             <DonateButton />
           </motion.div>
-          
 
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            className="pt-36 landscape:pt-10">
+            className="pt-36 landscape:pt-10"
+          >
             <span className="inline-block xs:py-1 xs:hidden py-5 px-7 landscape:py-2 landscape:px-3 bg-[#FFB800] text-[#0B0F19] font-black text-lg uppercase tracking-[0.3em] shadow-xl transform">
               Re-Elect Murfreesboro's Voice
             </span>
