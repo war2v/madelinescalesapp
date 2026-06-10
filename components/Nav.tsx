@@ -54,6 +54,7 @@ const Nav = () => {
       For City Council
     </h3>
   </div>
+  
 </div>
 
         <div className="w-full flex justify-end xl:hidden">

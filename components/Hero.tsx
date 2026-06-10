@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { VolunteerButton } from "./VolunteerButton";
 import { DonateButton } from "./DonateButton";
+import { Pointer, Vote } from "lucide-react";
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -69,6 +70,15 @@ const Hero = () => {
             <span className="inline-block xs:py-1 xs:hidden py-5 px-7 landscape:py-2 landscape:px-3 bg-[#FFB800] text-[#0B0F19] font-black text-lg uppercase tracking-[0.3em] shadow-xl transform">
               Re-Elect Murfreesboro's Voice
             </span>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            className="pt-36 landscape:pt-10"
+          >
+            
           </motion.div>
         </div>
       </div>
