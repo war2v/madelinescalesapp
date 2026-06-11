@@ -13,21 +13,21 @@ const galleryItems = [
   },
   {
     id: 2,
-    image: "/images/gallery/city-council.jpg",
+    image: "/images/scales.jpg",
     title: "Leadership in Action",
     description:
       "From public safety initiatives to community development projects, Madelyn has consistently fought for practical solutions that improve quality of life across Murfreesboro.",
   },
   {
     id: 3,
-    image: "/images/gallery/community-meeting.jpg",
+    image: "/images/judgeScales.png",
     title: "Listening to Residents",
     description:
       "Strong leadership begins with listening. Community meetings and direct engagement have always been at the center of her approach to public service.",
   },
   {
     id: 4,
-    image: "/images/gallery/family-event.jpg",
+    image: "/images/thePeople4.jpg",
     title: "Building the Future",
     description:
       "Investing in future generations means creating opportunities, supporting education, and ensuring Murfreesboro remains a place families are proud to call home.",
