@@ -26,9 +26,7 @@ export const metadata: Metadata = {
     "Murfreesboro Politics",
     "Tennessee Local Election",
   ],
-  openGraph: {
-    images: '/images/close.jpg'
-  }
+  
 };
 
 export default function RootLayout({

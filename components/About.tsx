@@ -1,6 +1,7 @@
 "use client";
 
 import { DonateButton } from "./DonateButton"
+import { Gallery } from "./Gallery";
 import { VolunteerButton } from "./VolunteerButton"
 
 export const About = () => {
@@ -48,6 +49,7 @@ export const About = () => {
             </div>
           </div>
         </div>
+        <Gallery/>
         <div className="flex w-full p-10 md:justify-center gap-4 md:flex-row flex-col items-center">
             <VolunteerButton/>
             <DonateButton/>
