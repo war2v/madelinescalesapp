@@ -46,12 +46,8 @@ export const Gallery = () => {
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col items-center text-center mb-16">
-          <Camera size={48} className="text-[#FFB800] mb-6" />
-
-          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
-            Campaign <br />
-            <span className="text-[#FFB800]">Gallery</span>
-          </h2>
+         
+         
 
           <p className="mt-6 text-slate-400 text-lg max-w-2xl">
             A look at the people, events, and moments that define a lifetime of
